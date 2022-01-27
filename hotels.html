@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- 
+name: Bradley Showen, 
+college: Seminole State College,
+course: COP2831, 
+instructor: Rebekah Gabel
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./slick-carousel/slick/slick.css"/> <!-- stylesheet for slick-carousel -->
+        <link rel="stylesheet" type="text/css" href="./slick-carousel/slick/slick-theme.css"/> <!-- stylesheet for slick-carousel -->
+        <link rel="stylesheet" href="./daterangepicker/daterangepicker.css"><!-- Date range picker -->
+
+        <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><!-- jQuery Source -->
+        <script src="./weather-plugin/build/openWeather.min.js"></script><!-- Weather Plugin -->
+        <script type="text/javascript" src="./slick-carousel/slick/slick.js"></script><!-- Carousel -->
+        <script type="text/javascript" src="./daterangepicker/moment.min.js"></script><!-- Date range picker -->
+        <script type="text/javascript" src="./daterangepicker/daterangepicker.js"></script><!-- Date range picker -->
+        <script src="./script.js"></script><!-- user script -->
+        
+        <title>Chattanooga | Hotels</title>
+        <style>
+            .image_banner{
+                background-image: url("./images/banners/hotel-banner.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 30%;
+                background-attachment: fixed;
+            }
+        </style>
+    </head>    
+    <body>
+        <header>
+            <div id="city_name">
+                <h1>Chattanooga</h1>
+            </div>
+            <a href="./weather.html">
+                <div id="weather_widget">
+                    <p>Currently: <span id="weather_temp"> </span> with <span id="description"></span>.</p>
+                    <img id="icon" src="">
+                </div>
+            </a>
+            <nav id="top">
+                <a href="./index.html">Home</a>
+                <a href="./restaurants.html">Restaurants</a>
+                <a href="./attractions.html">Attractions</a>
+                <a href="./hotels.html">Hotels</a>
+                <a href="./activities.html">Activities</a>
+                <a href="./history.html">History</a>
+                <a href="./weather.html">Weather</a>
+                <a href="./glossary.html">Glossary</a>
+                <a href="./sources.html">Sources</a>
+            </nav>
+        </header>
+        <main>
+            <div class="image_banner">
+                <div class="img_overlay">
+                    <h1 class="image_banner_text">Where to stay</h1>
+                </div>
+            </div>
+
+            <div class="content_container activities">
+                <div class="card_column left">
+                    <div class="form_container"></div>
+                    <div class="card_details left closed">
+                        <h2>Cottages In The Clouds</h2>
+                        <p>
+                            These cabins sit on top of Chattanooga's Lookout Mountain and feature hot tubs, gas fireplaces, and even WiFi. 
+                        </p>
+                        <a href="#" class="card_button">Make a reservation</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_container treetop-hideaway">
+                <div class="img_overlay">
+                    <div class="card_column right">
+                        <div class="form_container"></div>
+                        <div class="card_details right closed">
+                            <h2>Treetop Hideaway</h2>
+                            <p>
+                                Technically this isn't a cabin, but whose asking? Stay in a climate controlled tree house stocked with a full kitchen and bathroom. Enjoy the all of the scenic views that Lookout Mountain has to offer right from your balcony. 
+                            </p>
+                            <a href="#" class="card_button">Make a reservation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_container town">
+                <div class="card_column left">
+                    <div class="form_container"></div>
+                    <div class="card_details left closed">
+                        <h2>Campground</h2>
+                        <p>Chattanooga campgrounds serve as your basecamp for adventures. Enjoy hiking, biking, kayaking, rock climbing, white water rafting and much more all from Chattanooga's campgrounds.</p>
+                        <a href="#" class="card_button">Make a reservation</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_container choochoo-hotel">
+                <div class="img_overlay">
+                    <div class="card_column right">
+                        <div class="form_container"></div>
+                        <div class="card_details right closed">
+                            <h2>The Choo Choo Hotel</h2>
+                            <p>The Choo Choo Hotel is an old Terminal Station that opened in 1909. You can stay in an old Pullman Train Car which has been renovated into a modern hotel room.</p>
+                            <a href="#" class="card_button">Make a reservation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_container history">
+                <div class="card_column left">
+                    <div class="form_container"></div>
+                    <div class="card_details left closed">
+                        <h2>Welcome Valley Village</h2>
+                        <p>
+                            Welcome Valley Village offers 5 log cabins at the base of the Ocoee River. It is nestled in the SMokey Mountains and only a few minutes from Cherokee National Forest. You can enjoy whitewater rafting, tubing, horseback riding, fishing, hiking, and mountain biking. 
+                        </p>
+                        <a href="#" class="card_button">Make a reservation</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <nav id="bottom">
+                <a href="./index.html">Home</a>
+                <a href="./restaurants.html">Restaurants</a>
+                <a href="./attractions.html">Attractions</a>
+                <a href="./hotels.html">Hotels</a>
+                <a href="./activities.html">Activities</a>
+                <a href="./history.html">History</a>
+                <a href="./weather.html">Weather</a>
+                <a href="./glossary.html">Glossary</a>
+                <a href="./sources.html">Sources</a>
+            </nav>
+            <div id="signature">
+                <h2>Bradley Showen</h2>
+            </div>
+        </footer>
+    </body>
+</html>

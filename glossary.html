@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- 
+name: Bradley Showen, 
+college: Seminole State College,
+course: COP2831, 
+instructor: Rebekah Gabel
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./glossary.css">
+        <link rel="stylesheet" type="text/css" href="./slick-carousel/slick/slick.css"/> <!-- stylesheet for slick-carousel -->
+        <link rel="stylesheet" type="text/css" href="./slick-carousel/slick/slick-theme.css"/> <!-- stylesheet for slick-carousel -->
+        <link rel="stylesheet" href="./daterangepicker/daterangepicker.css"><!-- Date range picker -->
+        <link rel="stylesheet" href="./jquery-timepicker/jquery.timepicker.css"><!-- Time Picker-->
+        <link rel="stylesheet" href="./jQuery-accordian-widget/jquery-ui.css"><!-- Accordion -->
+
+        <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><!-- jQuery Source -->
+        <script src="./weather-plugin/build/openWeather.min.js"></script><!-- Weather Plugin -->
+        <script type="text/javascript" src="./slick-carousel/slick/slick.js"></script><!-- Carousel -->
+        <script type="text/javascript" src="./daterangepicker/moment.min.js"></script><!-- Date range picker -->
+        <script type="text/javascript" src="./daterangepicker/daterangepicker.js"></script><!-- Date range picker -->
+        <script src="./jquery-timepicker/jquery.timepicker.js"></script><!-- Time Picker-->
+        <Script src="./jQuery-accordian-widget/jquery-ui.js"></script><!-- Accordion -->
+        <script src="./script.js"></script><!-- user script -->
+        
+        <title>Chattanooga | Glossary</title>
+    </head>    
+    <body>
+        <header>
+            <div id="city_name">
+                <h1>Chattanooga</h1>
+            </div>
+            <a href="./weather.html">
+                <div id="weather_widget">
+                    <p>Currently: <span id="weather_temp"> </span> with <span id="description"></span>.</p>
+                    <img id="icon" src="">
+                </div>
+            </a>
+            <nav id="top">
+                <a href="./index.html">Home</a>
+                <a href="./restaurants.html">Restaurants</a>
+                <a href="./attractions.html">Attractions</a>
+                <a href="./hotels.html">Hotels</a>
+                <a href="./activities.html">Activities</a>
+                <a href="./history.html">History</a>
+                <a href="./weather.html">Weather</a>
+                <a href="./glossary.html">Glossary</a>
+                <a href="./sources.html">Sources</a>
+            </nav>
+        </header>
+        <main>
+            <div class="background_container">
+                <div class="accordion_container">
+                    <h1>jQuery methods</h1>
+                    <div id="accordion1">
+                        <h3>prev()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">prev()</span> This is a DOM traversal method. You use it to select the preceding sibling of each element in a list of elements. You can optionally pass in a string argument and the preceding sibling will only be selected if it matches the argument. For example, you can select all of the &lt;label&gt; elements that precede the &lt;input&gt; elements with this code.<span class="code">$("input").prev();</span>You can select all of the elements that preced the &lt;input&gt; elements only if they're &lt;span&gt; elemtents with this code. <span class="code">$("input").prev("span")</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>find()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">find()</span> This DOM traversal method will find and return all the matching elements in a set. You pass in a string argument which is the element you are searching for. For example, you can select all the &lt;p&gt; elements and then find all the &lt;span&gt; elements within the &lt;p &gt; elements with this code<span class="code">$("p").find("span");</span> 
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>attr()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">attr()</span> There are two versions of this method. This method either sets or gets an element's attribute. The getter version accepts one argument which will return the attribute value. The setter version will set the attribute to a specified value. To get an attribute you pass in the name of the attribute for which you want the value of. To set an attribute you pass in the first argument as the attribute name and the second argument as the attribute value. 
+                                </li> 
+                            </ul>
+                        </div>
+                        <h3>css()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">css()</span> There are two versions of this method. This method either sets or gets an element's css. The getter version accepts one argument which will return the css property value. The setter version will set a css property to a specified value. To get a css property value you pass in the name of the css property for which you want the value of. To set a css property value you pass in the first argument as the css property name and the second argument as the css property value. 
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>addClass()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">addClass()</span> Use this method to set the class name of an element or set of elements. You pass in a string argument which will become the class name(s) of the element(s). If you wish to add multiple classes to an element then you pass in a a single string with space separated class names. For example, lets set the class name of the &lt;h1&gt; element to "center bold" with this code<span class="code">$("h1").addClass("center bold");</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>removeClass()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">removeClass()</span> This method will remove a class or classes from and element or set of elements. You pass in a string argument which is the name of the class or classes you wish to remove from the element. Lets remove the "center" and "bold" classes from the &lt;h1&gt; element with this code<span class="code">$("h1").removeClass("center bold");</span>
+                                </li> 
+                            </ul>
+                        </div>
+                        <h3>toggleClass()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">toggleClass()</span>This is a very easy way to add/remove a class from an element. You pass in a string argument which is the class name to be added or removed from the element. This method will check the element and if the element already has the class name, it will remove it. If the element doesn't have the class name, it will add it. Simple!
+                                </li> 
+                            </ul>
+                        </div>
+                        <h3>html()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">html()</span> There are two versions of this method. When you use this method without any arguments it will return the HTML content for the selected element. When you pass in an argument it will set the HTML content of an element to the HTML string argument that you passed into the method. For example, lets set the HTML content of the body to say "Hello jQuery" with this code.<span class="code">$("body").html("&lt;h1&gt; Hello jQuery!&lt;/h1&gt;");</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>hide()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">hide()</span> This method makes it very easy to hide an element. Simply call this method on the selected element and it will be hidden from view. Lets hide all the &lt;h1&gt; elements with this code.<span class="code">$("h1").hide();</span>
+                                </li> 
+                            </ul>
+                        </div>
+                        <h3>show()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">show()</span>This method makes it easy to show an element if its hidden. Simply call this method on the selected element and it will be shown on the webpage. Lets show all the hidden &lt;h1&gt; elements on the webpage with this code.<span class="code">$("h1.hidden").show();</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>each()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">each()</span> This method will execute a function once for each element in an array. You pass in the function to be executed as the only parameter. Say we want to change the text color of all the &lt;h1&gt; elements using the each() method. We would use this code<span class="code">$("h1").each(function(){ $(this).css("color", "blue") });</span>there is a much easier way to do this though. Most jQuery methods that return a set of jQuery objects will automatically iterate through the set for you. We can do the same exact thing with this code.<span class="code">$("h1").css("color", "blue");</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- End of accordion container -->
+
+                <div class="accordion_container">
+                    <h1>jQuery event methods</h1>
+                    <div id="accordion2">
+                        <h3>animate()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">The animate() method</span>The jQuery animate method works by allowing you to specify new CSS properties and values for the selected element and apply those properties and values over a specified amount of time. The syntax for this method looks like this <span class="code">animate({cssProperty: cssValue}, milliseconds, callbackFunction)</span>. When you use a callback function it will be run after the CSS properties have been applied by the first parameter of the method. This is useful when you want to perform an action only after the CSS properties have been fully applied to the selected element. 
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>delay()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">delay()</span>This method is used to delay the animation or effect of the selected element. For example, lets show a div quickly and the hide the same div slowly. <span class="code_example">$("#div1").delay("fast").fadeIn();</span><span class="code_example">$("#div1").delay("slow").fadeOut();</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>stop()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">stop()</span>This method is used to stop the current animation of an element. When you pass in a boolean parameter of "true" then all of the animations in the queue for this element are removed. When a user clicks an animated element repeatedly, the animation will play multiple times in succession. This is undesirable and we use this method to prevent that behavior. We can use <span class="code">stop(true)</span> to stop the current animation and then start a new one. If the user continues to click then the animation will be stopped and restarted with each click. This results in the animation playing only one time, no matter how many times a user clicks or activates an animated element. 
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>finish()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">finish()</span>This method works similar to the <span class="code">stop()</span> method. The <span class="code">finish()</span> method will stop all currently-running animations, clear the animation queue, and complete any animations for the selected element.  
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>ready()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">ready()</span> This event method is jQeury's equivalent of the window.onload() function in JavaScript. Any code that depends on the DOM should be places inside the ready() function. This is because the ready() function will be called and run only when the document is ready. 
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>click()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">click()</span> This event method is applied to an element and the code inside the click() function will be executed when the element is clicked. This method accepts one argument as a function to be called. For example<span class="code">$("#submit_btn").click(function(){ //code to be executed });</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>mouseover()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">mouseover()</span> This event method is applied to an element and it accepts one argument as a function to be executed when the user moves their mouse over the element. 
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>hover()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">hover()</span> This event method works similarly to the mouseover() method. However, the hover() method accepts two arguments as functions to be called. The first argument is executed when the mouse enters the element and the second argument is executed when the mouse exits the element. 
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- End of accordion container-->
+
+                <div class="accordion_container">
+                    <h1>jQuery methods to work with forms</h1>
+                    <div id="accordion3">
+                        <h3>val()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">val()</span> This jQuery method is used to get or set the value of a form control. To get the value of a form control you first need to select the form control with a jQuery selector and then call the val() method on the selected element. To set the value of a form control you first need to select the form control with a jQuery selector and then call the val() method on the selected element and also pass in a string argument to the val() method like this<span class="code">$("#name").val("new value");</span>This method will return all the matching elements, not just the first matching element. So if you want to change all of the &lt;input&gt; elements you can use this code<span class="code">$("input").val("new value");</span>However, if you want to change the value of a single element then you can select the specific element by its index. For example, to change the first &lt;input&gt; element you can use this code <span class="code">$("input").eq(0).val("new value");</span> or to change the third &lt;input&gt; you can use<span class="code">$("input").eq(2).text("new value");</span>Understand that you access the specific element by its index in the return value of the jQuery selector. 
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>text()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">text()</span> This jQuery method is used to get or set the value of a form field or form control. To get the value of an element you first select the element and then call the text() method on the selected element. To set the value of the element you select an element and call text() on the element and pass in a string argument as the new value to be used. This method will return all of the matching elements, not just the first matching element. So if you want to change all of the &lt;h1&gt; elements you can use this code<span class="code">$("h1").text("new value");</span>However, if you want to change the value of a single element then you can select the specific element by its index. For example, to change the first &lt;h1&gt; element you can use this code<span class="code">$("h1").eq(0).text("new value");</span>or to change the third &lt;h1&gt; you can use<span class="code">$("h1").eq(2).text("new value");</span>Understand that you access the specific element by its index in the set that is returned by the jQuery selector. 
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>next()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">next()</span> This jQuery method is use to get the next node, or next sibling, of an element. This is useful because the specific element you want to select may not have an id or class name associated with it which can make it difficult to select with a jQuery selector. What you can do is select the parent element and then call next() to select the next element, which would be the element you are trying to select. For example, you can select the &lt;span&gt; element that comes directly after the input field with id "first_name" with this code<span class="code">$("#first_name").next();</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>submit()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">submit()</span> This jQuery method is used to submit the corresponding form to the server for processing. You will usually use this method within the method that validates form data. If the form data is valid then you call the submit() method, otherwise you display proper error messages to the user. 
+                                </li>
+                            </ul>
+                        </div>
+                        <h3>focus()</h3>
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="title">focus()</span> This jQuery method is used to highlight a form control or form field. You can only use this method on one form control element at a time. 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- End of accordion container-->
+            </div>
+        </main>
+        <footer>
+            <nav id="bottom">
+                <a href="./index.html">Home</a>
+                <a href="./restaurants.html">Restaurants</a>
+                <a href="./attractions.html">Attractions</a>
+                <a href="./hotels.html">Hotels</a>
+                <a href="./activities.html">Activities</a>
+                <a href="./history.html">History</a>
+                <a href="./weather.html">Weather</a>
+                <a href="./glossary.html">Glossary</a>
+                <a href="./sources.html">Sources</a>
+            </nav>
+            <div id="signature">
+                <h2>Bradley Showen</h2>
+            </div>
+        </footer>
+        <script>
+            $("#accordion1").accordion({
+                active: false, 
+                animate: 250, 
+                collapsible: true
+            });
+            $("#accordion2").accordion({ 
+                active: false,
+                animate: 250,
+                collapsible: true
+            });
+            $("#accordion3").accordion({ 
+                active: false,
+                animate: 250,
+                collapsible: true
+            });
+        </script>
+    </body>
+</html>

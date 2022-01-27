@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- 
+name: Bradley Showen, 
+college: Seminole State College,
+course: COP2831, 
+instructor: Rebekah Gabel
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./slick-carousel/slick/slick.css"/> <!-- stylesheet for slick-carousel -->
+        <link rel="stylesheet" type="text/css" href="./slick-carousel/slick/slick-theme.css"/> <!-- stylesheet for slick-carousel -->
+        <link rel="stylesheet" href="./daterangepicker/daterangepicker.css"><!-- Date range picker -->
+
+        <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><!-- jQuery Source -->
+        <script src="./weather-plugin/build/openWeather.min.js"></script><!-- Weather Plugin -->
+        <script type="text/javascript" src="./slick-carousel/slick/slick.js"></script><!-- Carousel -->
+        <script type="text/javascript" src="./daterangepicker/moment.min.js"></script><!-- Date range picker -->
+        <script type="text/javascript" src="./daterangepicker/daterangepicker.js"></script><!-- Date range picker -->
+        <script src="./script.js"></script><!-- user script -->
+        
+        <title>Chattanooga | Attractions</title>
+        <style>
+            .image_banner{
+                background-image: url("./images/banners/incline-railway-banner.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-attachment: fixed;
+            }
+        </style>
+    </head>    
+    <body>
+        <header>
+            <div id="city_name">
+                <h1>Chattanooga</h1>
+            </div>
+            <a href="./weather.html">
+                <div id="weather_widget">
+                    <p>Currently: <span id="weather_temp"> </span> with <span id="description"></span>.</p>
+                    <img id="icon" src="">
+                </div>
+            </a>
+            <nav id="top">
+                <a href="./index.html">Home</a>
+                <a href="./restaurants.html">Restaurants</a>
+                <a href="./attractions.html">Attractions</a>
+                <a href="./hotels.html">Hotels</a>
+                <a href="./activities.html">Activities</a>
+                <a href="./history.html">History</a>
+                <a href="./weather.html">Weather</a>
+                <a href="./glossary.html">Glossary</a>
+                <a href="./sources.html">Sources</a>
+            </nav>
+    </header>
+        <main>
+            <div class="image_banner">
+                <div class="img_overlay">
+                    <h1 class="image_banner_text">Attractions</h1>
+                </div>
+            </div>
+
+            <div class="background_container">
+                <div class="card_container">
+                    <div class="card">
+                        <h1>Incline Railway</h1>
+                        <img src="./images/attractions/incline-railway.jpg" alt="Incline Railway">
+                        <p>
+                            The Lookout Mountain Incline Railway is a popular tourist attraction with a long history in Chattanooga. <span class="hidden">Hop inside on of the train cars for a 1 mile ride to the top of Lookout Mountain. The railway has a grade of 72.7% making it the world steepest train ride. The first Incline Railway opened in 1886 and closed in 1895 before being taken down in 1900. The second Incline Railway opened in 1895 and its popularity was the reason that the first Incline Railway was closed. When the Incline Railway opened it was used as a main mode of transportation to the top of the mountain. Originally the cars were powered by coal-burning steam engines before being converted over to electric cars in 1911. The cable that pulls the cars up the track are the same cables used in the Brooklyn Bridge. The Incline Railway is now one of Chattanooga's main tourist attractions serving over 100,000 visitors annually.</span>
+                        </p>
+                        <a class="card_button left" href="#">Read more</a>
+                    </div>
+
+                    <div class="card">
+                        <h1>Ruby Falls</h1>
+                        <img src="./images/attractions/ruby-falls.jpg" alt="Ruby Falls">
+                        <p>
+                            Ruby Falls is a set of underground waterfalls, some more than 145 high, located more than 1,100ft underground inside of Chattanooga's Lookout Mountain. <span class="hidden">Ruby Falls was discovered on accident by a man named Leo Lambert. He was a chemist and had an interest in caves. He bought land on top of lookout mountain and began drilling straight down in search of another known cave system called Lookout Mountain Cave. After drilling 1,120 feet he discovered an crack in the rocks about 18inches in diameter. Driven by curiosity, Lambert and his team crawled through this space for 17 hours until they reached the waterfall that is now called Ruby Falls.</span>
+                        </p>
+                        <a class="card_button left" href="#">Read more</a>
+                    </div>
+                
+                    <div class="card">
+                        <h1>Rock City Gardens</h1>
+                        <img src="./images/attractions/rock-city-gardens.JPG" alt="Rock City Gardens">
+                        <p>
+                            Rock City is a tourist attraction on Lookout Mountain which features a long maze of trails and tunnels leading through unique rock formations and above a 140ft waterfall. <span class="hidden">As you walk through the gardens and trails you'll notice over 400 labeled native plant species. You will also see decorations of gnomes and small gnome towns on display inside of small caverns and caves. At one point the trail leads you above a 140ft waterfall where you can see the mountains of seven different states.</span>
+                        </p>
+                        <a class="card_button left" href="#">Read more</a>
+                    </div>
+
+                    <div class="card">
+                        <h1>Tennessee Aquarium</h1>
+                        <img src="./images/attractions/tennessee-aquarium.jpg" alt="Tennessee Aquarium">
+                        <p>
+                            The Tennessee Aquarium features is home to over 800 species of animal with more than 12,000 animals. <span class="hidden">With over 400,000 gallons of fresh water it was the largest fresh water aquariums in the world when it opened in May 1992. As you begin your tour through the aquarium you start with fresh water exhibits in the River Journey building. The tour continues through the Ocean Journey building where you experience all the salt water aquariums. Along the way, you'll come face-to-face with feisty otters, enormous catfish, and tons of turtles. You'll have an opportunity to touch sturgeon and stingray. Enjoy playful penguins, and marvel at all the sharks sharks, lemurs, and butterflies.</span>
+                        </p>
+                        <a class="card_button left" href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <nav id="bottom">
+                <a href="./index.html">Home</a>
+                <a href="./restaurants.html">Restaurants</a>
+                <a href="./attractions.html">Attractions</a>
+                <a href="./hotels.html">Hotels</a>
+                <a href="./activities.html">Activities</a>
+                <a href="./history.html">History</a>
+                <a href="./weather.html">Weather</a>
+                <a href="./glossary.html">Glossary</a>
+                <a href="./sources.html">Sources</a>
+            </nav>
+            <div id="signature">
+                    <h2>Bradley Showen</h2>
+            </div>
+        </footer>
+        
+    </body>
+</html>

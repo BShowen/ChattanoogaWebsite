@@ -1,0 +1,50 @@
+/* 
+name: Bradley Showen, 
+college: Seminole State College,
+course: COP2831, 
+instructor: Rebekah Gabel
+*/
+.accordion_container h1{
+    text-align: center;
+    margin: 0;
+    padding: 15px 0;
+    background-color: #a8b7bd;
+    border-radius: 3px;
+}
+/* container */
+ul > li {
+    border: 2px solid #a8b7bd;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    overflow: hidden;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+/* container title */
+span.title{ 
+    background-color:#a8b7bd;
+    color: #FFF;
+    width: 110%;
+    position: relative;
+    top: -1rem;
+    left: -0.5rem;
+    padding: 0.5rem 0 2.8rem 1rem;
+    height: 2.5rem;
+    display: block;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+span.code_example{
+    display: block;
+    text-align: center;
+    line-height: 2rem;
+    color: blue;
+}
+span.code{
+    font-weight: bold;
+}
+
